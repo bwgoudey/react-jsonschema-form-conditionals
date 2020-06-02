@@ -14,6 +14,7 @@
     "lint": "eslint src test playground",
     "precommit": "lint-staged",
     "prepush": "npm test",
+	"prepare": "npm run build",
     "publish-to-gh-pages": "npm run build:playground && gh-pages --dist build/",
     "publish-to-npm": "npm run dist &&  npm publish && npm version patch",
     "start": "webpack-dev-server",
